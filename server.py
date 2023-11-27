@@ -1,6 +1,11 @@
 from flask import Flask
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
 app = Flask(__name__)
+
+port = os.getenv("PORT")
 
 
 @app.route("/")
@@ -21,4 +26,4 @@ def about():
 
 
 if __name__=="__main__":
-    app.run(port=5007, debug=True)
+    app.run(port=port, debug=True)
