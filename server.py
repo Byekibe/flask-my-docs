@@ -14,7 +14,7 @@ port = os.getenv("PORT")
 def home():
     names = ["Kia", "Kai", "Koa", "Kei", "Kui"]
     ages = [12, 10, 15, 9, 5]
-    heights = (1.5, 1.2, 1.7, 1, 0.7)
+    heights = (1.5, 1.2, 1.7, 1, 0.75)
     return {
         "names": names,
         "ages": ages,
